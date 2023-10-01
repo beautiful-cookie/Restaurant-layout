@@ -60,9 +60,16 @@
         </div>
 
         <div class="burger-menu">
-          <a href="#" >
+          <button id="burger">
             <img src="./images/burger-img.png" alt="">
-          </a>
+          </button>
+
+          <div id="menu" class="burger-slide show">
+            <a class="nav-item block" href="*">ГЛАВНАЯ</a>
+            <a class="nav-item block" href="*">МЕНЮ</a>
+            <a class="nav-item block" href="*">О НАС</a>
+            <a class="nav-item block" href="*">БРОНЬ</a>
+          </div>
         </div>
       </div> 
 
@@ -347,7 +354,17 @@
   </div>
 
   <div class="footer">
-    Copyright 2022
+    Copyright 2023
   </div>
+
+  <script>
+    const burger = document.querySelector('#burger'); 
+    const menu = document.querySelector('#menu');   
+
+    burger.addEventListener("click", () => {
+      menu.classList.toggle('show'); 
+      
+    })
+  </script>
 </body>
 </html>

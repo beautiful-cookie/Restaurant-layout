@@ -190,7 +190,27 @@ body {
 
 .burger-menu {
     display: none;
+}    
+
+.burger-slide {
+    position: absolute; 
 }
+
+.block {
+    display: block; 
+}
+
+button {
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+}
+
+.show {
+    display: none; 
+}
+
+
 
 .history-title {
     font-family: 'Tinos', serif; 
@@ -638,6 +658,10 @@ body {
 } 
 
 @media (max-width: 780px) {
+    .header-line {
+        justify-content: space-between;
+    }
+    
     .history-holder {
         display: block;
     } 
